@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class FilmsRepositoryTest {
+public class FilmsManagerTest {
     FilmsManager repo = new FilmsManager();
     PurchaseFilm film = new PurchaseFilm(1, "Number one");
     PurchaseFilm film2 = new PurchaseFilm(2, "Hotel Belgrade");
