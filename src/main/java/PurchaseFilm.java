@@ -8,5 +8,8 @@ public class PurchaseFilm {
         this.titel = titel;
     }
 
-    //return last count of films
+    //return id of films
+    public int getId() {
+        return id;
+    }
 }
