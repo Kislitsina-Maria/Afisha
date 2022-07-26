@@ -3,7 +3,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class FilmsRepositoryTest {
-    FilmsRepository repo = new FilmsRepository();
+    FilmsManager repo = new FilmsManager();
     PurchaseFilm film = new PurchaseFilm(1, "Number one");
     PurchaseFilm film2 = new PurchaseFilm(2, "Hotel Belgrade");
     PurchaseFilm film3 = new PurchaseFilm(3, "Maska");
@@ -50,7 +50,7 @@ public class FilmsRepositoryTest {
 
     @Test
     public void shouldReverseLastTwo() {
-        FilmsRepository repo = new FilmsRepository(2);
+        FilmsManager repo = new FilmsManager(2);
         repo.addFilms(film);
         repo.addFilms(film2);
         repo.addFilms(film3);

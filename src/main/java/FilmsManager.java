@@ -1,4 +1,4 @@
-public class FilmsRepository {
+public class FilmsManager {
 
     PurchaseFilm[] films = new PurchaseFilm[0];
 
@@ -15,11 +15,11 @@ public class FilmsRepository {
 
     private int countLastFilms = 10;
 
-    public FilmsRepository(int countLastFilms) {
+    public FilmsManager(int countLastFilms) {
         this.countLastFilms = countLastFilms;
     }
 
-    public FilmsRepository() {
+    public FilmsManager() {
     }
 
     public void findLast() {
